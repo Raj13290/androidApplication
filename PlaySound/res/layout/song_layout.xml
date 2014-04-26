@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/index"
+        android:layout_width="35dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:text="100." />
+    
+    <TextView
+        android:id="@+id/songName"
+        android:layout_width="255dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@id/index"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="This is some name of Songs....his is some name of Songs....his is some name of Songs....his is some name of Songs....his is some name of Songs....his is some name of Songs....his is some name of Songs...."
+        android:textSize="15sp" />
+
+	<TextView 
+	    android:id="@+id/albumName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Album Name"
+        android:textSize="13sp"
+        android:layout_below="@id/songName"
+        android:paddingLeft="15dp"
+        android:layout_toRightOf="@id/index"
+        android:layout_alignParentBottom="true"
+        android:textColor="#3cb2ef"/>
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/songName"
+        android:paddingTop="2dp"
+        android:gravity="center_horizontal"
+        android:text="4.23"
+        android:textColor="#3cb2ef" />
+</RelativeLayout>
